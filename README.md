@@ -16,16 +16,24 @@ On Mac OS, you can use homebrew:
 $ brew install ffmpeg
 ```
 
-Then to install `gifhorse`, download the signed binary tarball for your OS from the Releases page. [Signing PGP key is available via Keybase](https://keybase.io/kklashinsky/pgp_keys.asc?fingerprint=4104f024165e528a71ac784bcfbf781763b4d7af).
+Then to install `gifhorse`, download the signed binary tarball for your OS from the Releases page. The releases come with signed SHA256 hashes, and [the signing PGP key is available via Keybase](https://keybase.io/kklashinsky/pgp_keys.asc?fingerprint=4104f024165e528a71ac784bcfbf781763b4d7af).
 
-If you don't have GPG, you can verify the SHA256 release hashes here:
-https://keybase.io/verify
 ```
 $ keybase id kklashinsky
 ▶ INFO Identifying kklashinsky
 ✔ public key fingerprint: 4104 F024 165E 528A 71AC 784B CFBF 7817 63B4 D7AF
 ✔ "exodus_konnor" on reddit: https://www.reddit.com/r/KeybaseProofs/comments/73ce6k/my_keybase_proof_redditexodus_konnor/
 ✔ "kklash" on github: https://gist.github.com/6647e3721da17b3ccb99f83dffa27e39
+```
+
+If you don't have GPG, [you can verify the SHA256 release hashes here](https://keybase.io/verify).
+
+Example installing to `/usr/local/bin`:
+```
+$ tar -xf gifhorse-darwin_dev_amd64.tar.gz
+$ cd gifhorse-darwin_dev_amd64/
+$ sudo cp gifhorse /usr/local/bin
+$ sudo chmod 755 /usr/local/bin/gifhorse # fix permissions
 ```
 
 ## From Source
