@@ -23,5 +23,5 @@ $(PLATFORMS):
 	tar -C $(RELEASE_DIR) -czf $(outdir).tar.gz $(output)
 	rm -r $(outdir)
 
-clean: dist
+clean:
 	rm -rf dist
